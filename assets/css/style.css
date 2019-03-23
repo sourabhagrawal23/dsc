@@ -2061,7 +2061,7 @@ Ready To Talk CSS
   text-align: center;
   position: relative;
   padding-top: 80px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
 }
 
@@ -2959,4 +2959,8 @@ Go Top CSS
     left: 50%;
     right: 50%;
   }
+}
+
+.talkDSC{
+  margin-top: 2%;
 }
