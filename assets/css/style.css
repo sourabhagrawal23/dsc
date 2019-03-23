@@ -41,6 +41,8 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 body {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -1147,29 +1149,29 @@ Services CSS
 }
 
 .services-right-image img:nth-child(1) {
-  left: 22%;
-  top: -85px;
+  left: 16%;
+  top: -130px;
   z-index: 1;
 }
 
 .services-right-image img:nth-child(2) {
-  left: 0;
+  left: 37%;
   right: 0;
   text-align: center;
   margin: 0 auto;
-  top: -52px;
+  top: -130px;
 }
 
 .services-right-image img:nth-child(3) {
-  left: 44%;
-  top: -33px;
+  left: 16%;
+  top: -1px;
   z-index: 1;
 }
 
 .services-right-image img:nth-child(4) {
-  right: 38%;
+  right: 14%;
   z-index: 1;
-  top: -220px;
+  top: -1px;
 }
 
 .services-right-image img:nth-child(5) {
@@ -2061,7 +2063,7 @@ Ready To Talk CSS
   text-align: center;
   position: relative;
   padding-top: 80px;
-  padding-bottom: 160px;
+  padding-bottom: 40px;
   background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
 }
 
@@ -2959,4 +2961,20 @@ Go Top CSS
     left: 50%;
     right: 50%;
   }
+}
+
+.talkDSC{
+  margin-top: 2%;
+}
+.ready-to-talk h3{
+  font-family: 'Righteous', cursive;
+  font-size: 2.4em;
+}
+.top_btn{
+  margin-top: 10px;
+}
+.main_event_header{
+  font-family: 'Kanit', sans-serif;
+  font-size: 4em;
+  margin-bottom: 40px;
 }
