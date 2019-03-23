@@ -2947,3 +2947,16 @@ Go Top CSS
   background: #44ce6f;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*CUSTOM CSS-------------------------
+----------------------------------------*/
+.single-works img{
+  width: 400px;
+  height: 300px;
+}
+@media (min-width: 747px){
+  .single-blog-post{
+    left: 50%;
+    right: 50%;
+  }
+}
