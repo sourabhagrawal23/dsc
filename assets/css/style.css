@@ -1147,29 +1147,29 @@ Services CSS
 }
 
 .services-right-image img:nth-child(1) {
-  left: 22%;
-  top: -85px;
+  left: 16%;
+  top: -120px;
   z-index: 1;
 }
 
 .services-right-image img:nth-child(2) {
-  left: 0;
+  left: 37%;
   right: 0;
   text-align: center;
   margin: 0 auto;
-  top: -52px;
+  top: -120px;
 }
 
 .services-right-image img:nth-child(3) {
-  left: 44%;
-  top: -33px;
+  left: 16%;
+  top: 10px;
   z-index: 1;
 }
 
 .services-right-image img:nth-child(4) {
-  right: 38%;
+  right: 14%;
   z-index: 1;
-  top: -220px;
+  top: 10px;
 }
 
 .services-right-image img:nth-child(5) {
