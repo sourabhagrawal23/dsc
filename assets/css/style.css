@@ -2970,3 +2970,11 @@ Go Top CSS
   font-family: 'Righteous', cursive;
   font-size: 2.4em;
 }
+.top_btn{
+  margin-top: 10px;
+}
+.main_event_header{
+  font-family: 'Kanit', sans-serif;
+  font-size: 4em;
+  margin-bottom: 40px;
+}
