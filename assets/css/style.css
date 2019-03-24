@@ -2086,8 +2086,8 @@ Ready To Talk CSS
 
 .ready-to-talk .btn-primary {
   background: #c679e3;
-  -webkit-box-shadow: 0 5px 20px 0 rgba(198, 121, 227, 0.25);
-          box-shadow: 0 5px 20px 0 rgba(198, 121, 227, 0.25);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.25);
 }
 
 .ready-to-talk .btn-primary:hover, .ready-to-talk .btn-primary:focus {
@@ -2965,6 +2965,8 @@ Go Top CSS
 
 .talkDSC{
   margin-top: 2%;
+  color: #070707;
+  background-color: rgb(255, 255, 255);
 }
 .ready-to-talk h3{
   font-family: 'Righteous', cursive;
@@ -2985,9 +2987,59 @@ Go Top CSS
   margin-top: -20%;
 }
 .contactAssist{
-  font-size: 10px;
+  font-size: 13px;
   padding: 10px 20px;
+  font-weight: 500;
+  color: #070707;
+  background-color: rgb(255, 255, 255);
 }
+.talkDSC:hover, .talkDSC:focus, .talkDSC:active {
+  color: #ffffff;
+  background: #ebecec;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 13px 27px 0 rgba(250, 250, 252, 0.25);
+          box-shadow: 0 13px 27px 0 rgba(250, 250, 250, 0.25);
+}
+.talkDSC:not(:disabled):not(.disabled).active, .talkDSC:not(:disabled):not(.disabled):active, .talkDSC .show > .talkDSC.dropdown-toggle {
+  color: #ffffff;
+  background: #fdfdfd;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 13px 27px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 13px 27px 0 rgba(255, 255, 255, 0.25);
+}
+
+.talkDSC.disabled:hover, .talkDSC.disabled:focus, .talkDSC:disabled:hover, .talkDSC:disabled:focus {
+  color: #fff;
+  background: #ffffff;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 13px 27px 0 rgba(250, 249, 249, 0.25);
+}
+.contactAssist:hover, .contactAssist:focus, .contactAssist:active {
+  color: #ffffff;
+  background: #ebecec;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 13px 27px 0 rgba(250, 250, 252, 0.25);
+          box-shadow: 0 13px 27px 0 rgba(250, 250, 250, 0.25);
+}
+.contactAssist:not(:disabled):not(.disabled).active, .contactAssist:not(:disabled):not(.disabled):active, .contactAssist .show > .contactAssist.dropdown-toggle {
+  color: #ffffff;
+  background: #fdfdfd;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 13px 27px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 13px 27px 0 rgba(255, 255, 255, 0.25);
+}
+
+.contactAssist.disabled:hover, .contactAssist.disabled:focus, .contactAssist:disabled:hover, .contactAssist:disabled:focus {
+  color: #fff;
+  background: #ffffff;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 13px 27px 0 rgba(250, 249, 249, 0.25);
+}
+
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
