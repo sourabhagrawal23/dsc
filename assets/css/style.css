@@ -2978,3 +2978,14 @@ Go Top CSS
   font-size: 4em;
   margin-bottom: 40px;
 }
+.section-title h2{
+  font-size: 2.3em;
+}
+.hero-content{
+  margin-top: -20%;
+}
+@media(max-width:747px){
+  .hero-content{
+    margin-top: -8%;
+  }
+}
