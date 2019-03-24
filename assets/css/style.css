@@ -2981,3 +2981,11 @@ Go Top CSS
 .section-title h2{
   font-size: 2.3em;
 }
+.hero-content{
+  margin-top: -20%;
+}
+@media(max-width:747px){
+  .hero-content{
+    margin-top: -8%;
+  }
+}
