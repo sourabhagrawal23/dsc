@@ -79,6 +79,7 @@
   }
   .services-right-image img:last-child {
     display: block;
+    left: 0.1%;
   }
   .services-left-image {
     text-align: center;
