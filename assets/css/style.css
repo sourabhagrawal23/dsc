@@ -2984,11 +2984,19 @@ Go Top CSS
 .hero-content{
   margin-top: -20%;
 }
+.contactAssist{
+  font-size: 10px;
+  padding: 10px 20px;
+}
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
   }
   .talkDSC{
     margin-top: 10%;
+  }
+  .contactAssist{
+    font-size: 7px;
+    padding: 8px 10px;
   }
 }
