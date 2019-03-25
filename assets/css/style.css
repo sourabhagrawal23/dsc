@@ -3065,7 +3065,9 @@ Go Top CSS
 .addMargin{
   margin-top: 6%;
 }
-.boxes-area .container{
+.top_box{
+  height: 150px;
+  width: 230;
 }
 @media(max-width:747px){
   .hero-content{
@@ -3077,5 +3079,9 @@ Go Top CSS
   .contactAssist{
     font-size: 7px;
     padding: 8px 10px;
+  }
+  .top_box{
+    height: 200px;
+    width: 340px;
   }
 }
