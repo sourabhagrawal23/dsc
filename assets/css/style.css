@@ -3040,6 +3040,9 @@ Go Top CSS
           box-shadow: 0 13px 27px 0 rgba(250, 249, 249, 0.25);
 }
 
+.event_header{
+  font-size: 2em;
+}
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
