@@ -3040,6 +3040,28 @@ Go Top CSS
           box-shadow: 0 13px 27px 0 rgba(250, 249, 249, 0.25);
 }
 
+.event_header{
+  font-size: 2em;
+}
+
+.event_register{
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.single-box .second_icon {
+  display: inline-block;
+  text-align: center;
+  left: 30%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  background: #cdf1d8;
+  border-radius: 50%;
+  color: #44ce6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
