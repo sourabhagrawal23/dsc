@@ -3062,6 +3062,11 @@ Go Top CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.addMargin{
+  margin-top: 6%;
+}
+.boxes-area .container{
+}
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
