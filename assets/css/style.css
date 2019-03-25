@@ -3043,6 +3043,11 @@ Go Top CSS
 .event_header{
   font-size: 2em;
 }
+
+.event_register{
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
