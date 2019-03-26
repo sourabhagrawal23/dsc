@@ -31,80 +31,6 @@
 		<title>DSC-KIIT</title>
 
 		<link rel="icon" type="image/png" href="assets/img/favicon.png">
-        <style>
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99999; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-
-
-</style>
 
 	</head>
 	
@@ -172,7 +98,7 @@
 									<h2>Developer Student Club KIIT</h2>
 									<p>Google collaborates with university students who are enthusiastic about growing developer communities and supports them with commencing student clubs on their campuses. Developer Student Clubs is a program that recognizes and supports university students who are excited about growing developer communities that cultivate learning, sharing, and collaboration.</p>
 									
-									<a id="rm" class="btn btn-primary">Read More</a>
+									<a id="rm" style="color:#ffffff;" class="btn btn-primary">Read More</a>
                                     <!-- The Modal -->
                                     <div id="myModal" class="modal">
                                     <!-- Modal content -->
@@ -1275,7 +1201,7 @@
 		<section class="funfacts-area ptb-80">
 			<div class="container">
 				<div class="section-title">
-					<h2>Some Numbers</h2>
+					<h2>What We Have</h2>
 					<div class="bar"></div>
 					<p></p>
 				</div>
@@ -2043,31 +1969,33 @@
 				});
 			});
 		</script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			// Get the button that opens the modal
+			var btn = document.getElementById("rm");
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			
+			
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			  modal.style.display = "block";
+			  body.style.overflow = "hidden";
+			}
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal ) {
+				modal.style.display = "none";
+			  }
+			}
+			</script>
 	</body>
     
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-// Get the button that opens the modal
-var btn = document.getElementById("rm");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal ) {
-    modal.style.display = "none";
-  }
-}
-</script>
     
 </html>
