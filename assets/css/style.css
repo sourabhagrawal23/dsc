@@ -595,80 +595,24 @@ Main Banner CSS
 
 .main-banner .banner-image img:nth-child(1) {
   z-index: 3;
-  top: -130px;
+  top: -150px;
   left: -45px;
 }
 
 .main-banner .banner-image img:nth-child(2) {
-  right: 145px;
-  top: -287px;
-}
-
-.main-banner .banner-image img:nth-child(3) {
-  left: 25px;
-  top: -20px;
-}
-
-.main-banner .banner-image img:nth-child(4) {
-  right: 12%;
-  top: 118px;
-  z-index: 1;
-}
-
-.main-banner .banner-image img:nth-child(5) {
-  left: 28%;
-  top: -120px;
-  z-index: 2;
-}
-
-.main-banner .banner-image img:nth-child(6) {
-  right: 35%;
-  z-index: 1;
+  left: 255px;
   top: -150px;
 }
 
-.main-banner .banner-image img:nth-child(7) {
-  right: 20px;
-  top: -110px;
+.main-banner .banner-image img:nth-child(3) {
+  left: -45px;
+  top: 50px;
 }
 
-.main-banner .banner-image img:nth-child(8) {
-  right: 25px;
-  top: -140px;
-}
-
-.main-banner .banner-image img:nth-child(9) {
-  right: 30%;
+.main-banner .banner-image img:nth-child(4) {
+  left: 255px;
+  top: 50px;
   z-index: 1;
-  top: -35px;
-}
-
-.main-banner .banner-image img:nth-child(10) {
-  left: 37%;
-  top: -28px;
-  z-index: 1;
-}
-
-.main-banner .banner-image img:nth-child(11) {
-  left: 37%;
-  top: -160px;
-  z-index: 1;
-}
-
-.main-banner .banner-image img:nth-child(12) {
-  left: 90px;
-  top: -110px;
-}
-
-.main-banner .banner-image img:nth-child(13) {
-  left: 56%;
-  top: -25px;
-  z-index: 2;
-}
-
-.main-banner .banner-image img:nth-child(14) {
-  right: 105px;
-  top: -28px;
 }
 
 .main-banner .banner-image img:last-child {
@@ -3069,6 +3013,10 @@ Go Top CSS
   height: 150px;
   width: 230;
 }
+.banner-image{
+  height: 200px;
+  width: 300px;
+}
 /*.pricing-table{
   margin-left: 380px;
   margin-right: -380px;
@@ -3087,6 +3035,9 @@ Go Top CSS
   .top_box{
     height: 200px;
     width: 340px;
+  }
+  .banner-image{
+    width: 380px;
   }
 }
 /* The Modal (background) */
