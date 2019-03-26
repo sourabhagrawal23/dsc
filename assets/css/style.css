@@ -3013,6 +3013,10 @@ Go Top CSS
   height: 150px;
   width: 230;
 }
+.banner-image{
+  height: 200px;
+  width: 300px;
+}
 /*.pricing-table{
   margin-left: 380px;
   margin-right: -380px;
@@ -3031,6 +3035,9 @@ Go Top CSS
   .top_box{
     height: 200px;
     width: 340px;
+  }
+  .banner-image{
+    width: 380px;
   }
 }
 /* The Modal (background) */
@@ -3103,8 +3110,4 @@ body .modal-open{
   padding: 2px 16px;
   background-color: #000000;
   color: #ffffff;
-}
-.banner-image{
-  height: 200px;
-  width: 300px;
 }
