@@ -4,7 +4,7 @@
 devexpo.html page:
 
 There is a blank section with comment as "Timeline - Start Design & Development Services". 
-What you have to do is, create a timeline (like in link provided https://codepen.io/savalazic/pen/QKwERN/ or https://codepen.io/ArnaudBalland/pen/rLeQgd/ ) with following information:
+What you have to do is, create a timeline (like in link provided https://codepen.io/NilsWe/pen/FemfK/ ) with following information:
 
 ____________________________________________
 Agenda
