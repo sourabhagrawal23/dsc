@@ -910,7 +910,7 @@ Boxes CSS
 .boxes-area {
   position: relative;
   padding-bottom: 80px;
-  margin-top: -130px;
+  margin-top: -250px;
   z-index: 1;
 }
 
@@ -2952,7 +2952,7 @@ Go Top CSS
 
 /*CUSTOM CSS-------------------------
 ----------------------------------------*/
-.single-works img{
+/*.single-works img{
   width: 400px;
   height: 300px;
 }
@@ -2962,7 +2962,7 @@ Go Top CSS
     right: 50%;
   }
 }
-
+*/
 .talkDSC{
   margin-top: 2%;
   color: #070707;
@@ -3040,6 +3040,39 @@ Go Top CSS
           box-shadow: 0 13px 27px 0 rgba(250, 249, 249, 0.25);
 }
 
+.event_header{
+  font-size: 2em;
+}
+
+.event_register{
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.single-box .second_icon {
+  display: inline-block;
+  text-align: center;
+  left: 30%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  background: #cdf1d8;
+  border-radius: 50%;
+  color: #44ce6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.addMargin{
+  margin-top: 6%;
+}
+.top_box{
+  height: 150px;
+  width: 230;
+}
+/*.pricing-table{
+  margin-left: 380px;
+  margin-right: -380px;
+}*/
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
@@ -3051,4 +3084,79 @@ Go Top CSS
     font-size: 7px;
     padding: 8px 10px;
   }
+  .top_box{
+    height: 200px;
+    width: 340px;
+  }
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+body .modal-open{
+  overflow: hidden;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #000000;
+  color: #ffffff;
 }
