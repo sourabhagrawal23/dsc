@@ -2768,6 +2768,7 @@ Footer CSS
 
 .single-footer-widget ul.footer-contact-info {
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .single-footer-widget ul.footer-contact-info li {
@@ -3110,4 +3111,15 @@ body .modal-open{
   padding: 2px 16px;
   background-color: #000000;
   color: #ffffff;
+}
+.details{
+  margin-top: 10px;
+}
+.details p{
+  font-size: 0.9em;
+}
+.details h2{
+  font-size: 3em;
+  text-decoration-style: solid;
+  margin-bottom: 20px;
 }
