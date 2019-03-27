@@ -3018,6 +3018,13 @@ Go Top CSS
   height: 200px;
   width: 300px;
 }
+.side_btn{
+  position: relative;
+  left: 35%;
+}
+.addMargin .top_btn{
+  margin-bottom: -100px;
+}
 /*.pricing-table{
   margin-left: 380px;
   margin-right: -380px;
@@ -3039,6 +3046,10 @@ Go Top CSS
   }
   .banner-image{
     width: 100%;
+  }
+  .side_btn{
+    left: 45%;
+    margin-top: 4.6px;
   }
 }
 /* The Modal (background) */
