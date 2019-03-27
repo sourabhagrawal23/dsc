@@ -3038,7 +3038,7 @@ Go Top CSS
     width: 340px;
   }
   .banner-image{
-    width: 380px;
+    width: 100%;
   }
 }
 /* The Modal (background) */
