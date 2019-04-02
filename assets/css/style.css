@@ -3020,6 +3020,7 @@ Go Top CSS
 }
 .side_btn{
   position: relative;
+  margin-top: -100px;
   left: 30%;
 }
 .addMargin .top_btn{
@@ -3049,7 +3050,7 @@ Go Top CSS
   }
   .side_btn{
     left: 45%;
-    margin-top: 4.6px;
+    margin-top: -95px;
   }
 }
 /* The Modal (background) */
