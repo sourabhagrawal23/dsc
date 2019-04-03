@@ -3135,3 +3135,6 @@ body .modal-open{
   text-decoration-style: solid;
   margin-bottom: 20px;
 }
+.speakers{
+  font-weight: 700;
+}
