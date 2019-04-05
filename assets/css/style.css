@@ -3140,6 +3140,9 @@ Go Top CSS
   .banner-image{
     width: 100%;
   }
+  .banner-image-main img{
+    width: 0%;
+  }
   .side_btn{
     left: 45%;
     margin-top: -95px;
