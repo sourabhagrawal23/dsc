@@ -600,8 +600,8 @@ Main Banner CSS
 }
 
 .main-banner .banner-image img:nth-child(2) {
-  left: 100px;
-  top: -220px;
+  left: 255px;
+  top: -150px;
 }
 
 .main-banner .banner-image img:nth-child(3) {
