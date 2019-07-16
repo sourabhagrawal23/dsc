@@ -3103,8 +3103,8 @@ Go Top CSS
   margin-top: 6%;
 }
 .top_box{
-  height: 150px;
-  width: 230;
+  height: 10%;
+  width: 100%;
 }
 .banner-image{
   height: 200px;
@@ -3118,6 +3118,16 @@ Go Top CSS
 .addMargin .top_btn{
   margin-bottom: -100px;
 }
+
+.video-box{
+  position: relative;
+  margin: -650px -900px 100px 700px;
+}
+
+.youtube-video{
+  width: 440px;
+  height: 400px;
+}
 /*.pricing-table{
   margin-left: 380px;
   margin-right: -380px;
@@ -3125,6 +3135,13 @@ Go Top CSS
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
+  }
+  .video-box{
+    margin: 0px 0px 0px 0px;
+  }
+  .youtube-video{
+    width: 290px;
+    height: 250px;
   }
   .talkDSC{
     margin-top: 10%;
@@ -3134,7 +3151,7 @@ Go Top CSS
     padding: 8px 10px;
   }
   .top_box{
-    height: 200px;
+    height: 250px;
     width: 340px;
   }
   .banner-image{
