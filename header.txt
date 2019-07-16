@@ -1,0 +1,47 @@
+
+document.write(<header id="header">
+			<div class="startp-mobile-nav">
+				<div class="logo">
+					<a href="index.html"><img src="assets/img/dsclogo.png" alt="logo"></a>
+				</div>
+			</div>
+
+			<div class="startp-nav">
+				<div class="container">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<a class="navbar-brand" href="index.html"><img src="assets/img/dsclogo.png" alt="logo" height="60px"></a>
+
+						<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+							<ul class="navbar-nav nav ml-auto">
+							
+
+								<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Events<i data-feather="chevron-down"></i></a>
+									<ul class="dropdown_menu">
+										<li class="nav-item"><a href="#upcoming" class="nav-link">Upcoming</a></li>
+										
+										<li class="nav-item"><a href="past.html" class="nav-link">Past</a></li>
+									</ul>
+								</li>
+								<!--<li class="nav-item"><a href="#tech" class="nav-link">Technologies</a></li>-->
+								<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+<!--                                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>-->
+								<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+								<li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+<!--								<li class="nav-item"><a href="devexpo.html" class="nav-link">DevExpo</a></li>-->
+							</ul>
+						</div>
+                        <div class="others-option">
+							<a href="#support" class="btn btn-light">Talk to Google Assistant</a>
+						</div>
+<!--
+						<div class="others-option">
+							<a href="#" class="btn btn-light">Google Play</a>
+							<a href="#" class="btn btn-primary">Login</a>
+						</div>
+-->
+					</nav>
+				</div> 
+			</div>
+		</header>
+')
