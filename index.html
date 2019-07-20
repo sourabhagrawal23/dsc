@@ -27,7 +27,8 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 		<!-- Responsive CSS -->
 		<link rel="stylesheet" href="assets/css/responsive.css">
-		
+		<!-- Calendar CSS -->
+		<link rel="stylesheet" href="assets/css/dycalendar.min.css">
 		<title>DSC KIIT</title>
 
 		<link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -174,7 +175,22 @@
 		</div>
 
 		<!-- End Boxes Area -->
-		
+		<!-- Event Calendar -->
+		<section class="calendar-event">
+			<div class="container">
+				<div class="calendar-text">
+					<h3>Upcoming Event Calendar</h3>
+					<p>Join in all the fun with our events this month.<br> Let's explore more together.<br> -DSC KIIT</p>
+					<br><br><a href="past.html" class="btn contactAssist calendar-btn">View All Events</a></center>
+				</div> 
+				<div class="event-calendar">
+					<div id="calendar" 
+						class="dycalendar-container skin-black gradient shadow-spacegray round-edge"></div>
+				</div>
+                
+			</div>
+		</section>
+		<!-- End Event Calendar-->
 		<!-- Upcoming Events -->
 <!--
 		<section class="services-area ptb-80 bg-f7fafd">
@@ -903,7 +919,9 @@
         <!-- Contact Form Min JS -->
         <script src="assets/js/contact-form-script.js"></script>
         <!-- StartP Map JS FILE -->
-        <script src="assets/js/startp-map.js"></script>
+		<script src="assets/js/startp-map.js"></script>
+		<!-- dycalendar Min JS FILE -->
+        <script src="assets/js/dycalendar.min.js"></script>
         <!-- Main JS -->
 		<script src="assets/js/main.js"></script>
 
@@ -916,6 +934,17 @@
 						$(this).html(countNumber);
 					});
 				});
+			});
+		</script>
+		<script>
+			dycalendar.draw({
+				target: "#calendar",
+				type: "month",
+				year: 2019,
+				month: 6,
+				date: 20,
+				highlighttargetdate: true,
+				prevnextbutton: "hide"
 			});
 		</script>
 		<script>
