@@ -2136,6 +2136,51 @@ Ready To Talk CSS
 }
 
 /*================================================
+Calendar CSS
+=================================================*/
+.calendar-event {
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+}
+
+.calendar-event h3 {
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.calendar-event p {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.calendar-event .btn::before, .calendar-event .btn::after {
+  background: #44ce6f;
+}
+
+.calendar-event .btn-primary {
+  background: #c679e3;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 5px 20px 0 rgba(255, 255, 255, 0.25);
+}
+
+.calendar-event .btn-primary:hover, .calendar-event .btn-primary:focus {
+  -webkit-box-shadow: 0 5px 20px 0 rgba(68, 206, 111, 0.25);
+          box-shadow: 0 5px 20px 0 rgba(68, 206, 111, 0.25);
+}
+
+.calendar-event span a {
+  margin-left: 15px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/*================================================
 Partner CSS
 =================================================*/
 .partner-section {
@@ -3128,6 +3173,15 @@ Go Top CSS
   width: 440px;
   height: 400px;
 }
+
+.calendar-text{
+  float: left;
+  font-family: "Poppins", sans-serif;
+}
+.event-calendar{
+  position: relative;
+  margin-left: 70%;
+}
 /*.pricing-table{
   margin-left: 380px;
   margin-right: -380px;
@@ -3135,6 +3189,15 @@ Go Top CSS
 @media(max-width:747px){
   .hero-content{
     margin-top: -8%;
+  }
+  .dycalendar-container{
+    margin: 0 0 0 0;
+  }
+  .event-calendar{
+    margin-left: 0px;
+  }
+  .calendar-btn{
+    margin-bottom: 30px;
   }
   .video-box{
     margin: 0px 0px 0px 0px;
