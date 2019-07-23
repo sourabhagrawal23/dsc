@@ -3148,7 +3148,7 @@ Go Top CSS
   margin-top: 6%;
 }
 .top_box{
-  height: 10%;
+  height: 360px;
   width: 100%;
 }
 .banner-image{
@@ -3214,7 +3214,7 @@ Go Top CSS
     padding: 8px 10px;
   }
   .top_box{
-    height: 250px;
+    height: 300px;
     width: 340px;
   }
   .banner-image{
