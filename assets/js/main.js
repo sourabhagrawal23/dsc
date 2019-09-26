@@ -101,6 +101,7 @@
 		owl.owlCarousel({
 			loop: true,
 			nav: false,
+			lazyLoad: true,
 			dots: true,
 			autoplay: false,
 			smartSpeed: 1000,
