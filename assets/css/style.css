@@ -1691,7 +1691,7 @@ Works CSS
 
 .single-works .works-content {
   position: absolute;
-  bottom: -60px;
+  top: 20px;
   left: 0;
   padding: 20px;
   -webkit-transition: 0.5s;
@@ -1714,7 +1714,7 @@ Works CSS
 }
 
 .single-works:hover::before {
-  opacity: .8;
+  opacity: .9;
   visibility: visible;
 }
 
