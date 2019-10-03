@@ -589,7 +589,8 @@
     left: 15px;
   }
   .startp-mobile-nav .logo img {
-    width: 120px;
+    width: 145px;
+      height: 26px;
   }
   .startp-mobile-nav nav .navbar-nav .nav-item a svg {
     display: none;
