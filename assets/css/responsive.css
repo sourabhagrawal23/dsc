@@ -587,10 +587,12 @@
     top: 11px;
     z-index: 999;
     left: 15px;
+      width: 160px;
+      height: 30px;
   }
   .startp-mobile-nav .logo img {
-    width: 140px;
-      height: 25px;
+    width: 160px;
+      height: 30px;
   }
   .startp-mobile-nav nav .navbar-nav .nav-item a svg {
     display: none;
