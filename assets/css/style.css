@@ -386,6 +386,8 @@ Preloader CSS
 }
 
 .preloader .spinner {
+  /* width: 60px;
+  height: 60px; */
   width: 60px;
   height: 60px;
   background-color: #ffffff;
@@ -432,7 +434,6 @@ Preloader CSS
             transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
-
 /*================================================
 Navbar CSS
 =================================================*/
@@ -691,7 +692,40 @@ Main Banner CSS
   font-weight: 500;
   margin-bottom: 20px;
 }
-
+@-webkit-keyframes changeLetter {
+  0% {
+    content: " Developers";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: " Hackers";
+  }
+}
+@keyframes changeLetter {
+  0% {
+    content: " Developers";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: " Hackers";
+  }
+}
+.main-banner .hero-content h2 {
+  display: -webkit-box;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.main-banner .hero-content h2:after {
+  -webkit-animation: changeLetter 3s linear infinite alternate;
+          animation: changeLetter 3s linear infinite alternate;
+  content: "";
+  font-size: 40px;
+}
 .main-banner .hero-content p {
   margin-bottom: 30px;
 }
