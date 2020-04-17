@@ -35,6 +35,40 @@
     line-height: 30px;
     margin-bottom: 15px;
   }
+  @-webkit-keyframes changeLetter {
+    0% {
+      content: " Developers";
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      content: " Hackers";
+    }
+  }
+  @keyframes changeLetter {
+    0% {
+      content: " Developers";
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      content: " Hackers";
+    }
+  }
+  .main-banner .hero-content h2 {
+    display: -webkit-box;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .main-banner .hero-content h2:after {
+    -webkit-animation: changeLetter 3s linear infinite alternate;
+            animation: changeLetter 3s linear infinite alternate;
+    content: "";
+    font-size: 25px;
+  }
   .main-banner .banner-image {
     text-align: center;
   }
