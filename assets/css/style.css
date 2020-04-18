@@ -183,7 +183,18 @@ p:last-child {
   -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
           box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
-
+.btna {
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 15px 10px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .btn {
   font-weight: 600;
   font-size: 14px;
