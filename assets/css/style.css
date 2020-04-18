@@ -205,7 +205,7 @@ p:last-child {
   width: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: #c679e3;
+  background: #000000;
   z-index: -1;
 }
 
@@ -3185,7 +3185,7 @@ Go Top CSS
   bottom: 30px;
   right: 0;
   color: #ffffff;
-  background-color: #c679e3;
+  background-color: #000000;
   z-index: 1;
   display: none;
   width: 45px;
