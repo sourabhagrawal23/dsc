@@ -47,6 +47,11 @@
             justify-content: center;
         }
 
+        ul {
+            color: #6084a4;
+            line-height: 1.9;
+        }
+
         [class*="col-"] {
             background: transparent;
             padding-top: 0.75rem;
@@ -146,18 +151,9 @@
                             <li class="nav-item">
                                 <a href="/index.html" class="nav-link">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="/events.html" class="nav-link">Events<i data-feather="chevron-down"></i></a>
-                                <ul class="dropdown_menu">
-                                    <li class="nav-item">
-                                        <a href="/index.html#upcoming" class="nav-link">Upcoming</a>
-                                    </li>
+                            <li class="nav-itema"><a href="/events.html" class="nav-link">Events</a></li>
+                            <li class="nav-item"><a href="/projects.html" class="nav-link">Projects</a></li>
 
-                                    <li class="nav-item">
-                                        <a href="/past.html" class="nav-link">Past</a>
-                                    </li>
-                                </ul>
-                            </li>
                             <li class="nav-item">
                                 <a href="/blog.html" class="nav-link">Blog</a>
                             </li>
@@ -178,41 +174,60 @@
     <div class="container custom-height">
         <div class="row offset-positive">
             <div class="col-12 col-md-7">
-                <h1 class="mt-3 mt-md-5 mb-1">DSC KIIT Website</h1>
+                <h1 class="mt-3 mt-md-5 mb-1">Medical Consultation</h1>
                 <br />
 
-                <span class="badge badge-pill badge-info mt-2" style="min-width: 70px;">DSC</span>
+                <span class="badge badge-pill badge-info mt-2" style="min-width: 70px;">ReqactJS</span>
 
                 <span class="badge badge-pill badge-info mt-2" style="min-width: 70px;">Javascript</span>
 
                 <span class="badge badge-pill badge-info mt-2" style="min-width: 70px;">Web</span>
 
                 <p class="links mt-5">
-                    <a href="https://dsckiit.tech" target="_blank" class="monitor"><i data-feather="monitor"></i>View
+                    <a href="https://medicalconsultationplatform.firebaseapp.com/" target="_blank" class="monitor"><i
+                            data-feather="monitor"></i>View
                         Live
                         App</a>
                     <br /><br />
-                    <a href="https://github.com/DSC-KIIT/DSC-KIIT-Website" target="_blank" class="github"><i
+                    <a href="https://github.com/DSC-KIIT/Medical_Consultation" target="_blank" class="github"><i
                             data-feather="github"></i>View source
                         code on github</a>
                 </p>
 
                 <h3 class="mt-4">About</h3>
+                <p><br /></p>
 
+                <h4> Medical Consultation Platform</h4>
+                <br />
                 <p>
-                    The official DSC KIIT Website.
+                    Deployment Instructions<br />
+                    CD pipeline is already setup using GitHub Actions. Follow the instructions if you want to deploy via
+                    your local machine (NOT RECOMMENDED)
+                    <ul>
+                        <li>Install firebase-tools by running npm i -g firebase-tools</li>
+                        <li> Login to the correct gmail account by running firebase login</li>
+                        <li>Run npm run build --prod to build the files for deployment. The build files are assembled in
+                            the
+                            build/ folder</li>
+                        <li>Run firebase deploy to deploy the current build</li>
+                    </ul>
+
+
                 </p>
 
             </div>
             <div class="col-12 col-md-5 mt-5 order-first order-md-last border" id="slideshow">
                 <div>
-                    <img class="slideshow" src="/assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png" />
+                    <img class="slideshow" src="/assets/img/projects/medical-consultation/medical-consultation-1.png" />
                 </div>
                 <div>
-                    <img class="slideshow" src="/assets/img/projects/dsc-kiit-website/dsc-kiit-website-2.png" />
+                    <img class="slideshow" src="/assets/img/projects/medical-consultation/medical-consultation-2.png" />
                 </div>
                 <div>
-                    <img class="slideshow" src="/assets/img/projects/dsc-kiit-website/dsc-kiit-website-3.png" />
+                    <img class="slideshow" src="/assets/img/projects/medical-consultation/medical-consultation-3.png" />
+                </div>
+                <div>
+                    <img class="slideshow" src="/assets/img/projects/medical-consultation/medical-consultation-4.png" />
                 </div>
             </div>
         </div>
