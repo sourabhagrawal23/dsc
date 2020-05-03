@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Meanmenu Min CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Odometer CSS -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>DSC KIIT</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <style>
+        .heading-title {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .single-box {
+            border: 1px dashed #cdf1d8;
+            padding: 30px 20px;
+            position: relative;
+            z-index: 1;
+            border-radius: 5px;
+            background: #ffffff;
+            -webkit-box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+            box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .card:hover .card-title {
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        [class*="row"] {
+            margin-bottom: 1rem;
+            justify-content: center;
+        }
+
+        [class*="col-"] {
+            background: transparent;
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            width: 100%;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .know-more {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            background: #44ce6f;
+            text-align: center;
+            padding: 0.5rem;
+            opacity: 0;
+            color: white;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+
+        .single-works .know-more:hover {
+            background: #04B45F;
+            color: #ffffff;
+        }
+
+        .single-works:hover .know-more {
+            opacity: 1;
+            visibility: visible;
+            bottom: 20px;
+            z-index: 3;
+        }
+
+        .works-content h3 {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Start Preloader Area -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- End Preloader Area -->
+
+    <!-- Start Navbar Area -->
+    <header id="header">
+        <div class="startp-mobile-nav">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/dsckiit2019_colour_horizon.svg" alt="logo"></a>
+            </div>
+        </div>
+
+        <div class="startp-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/dsclogo.png" alt="logo" height="40px"
+                            width="300px"></a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav ml-auto">
+
+
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-itema"><a href="events.html" class="nav-link">Events</a></li>
+                            <!--<li class="nav-item"><a href="#tech" class="nav-link">Technologies</a></li>-->
+                            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="mentors.html" class="nav-link">Mentors</a></li>
+                            <!--                                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>-->
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="team.html" class="nav-link">Team<i
+                                        data-feather="chevron-down"></i></a>
+                                <ul class="dropdown_menu">
+                                    <li class="nav-item"><a href="team.html#Lead" class="nav-link">Lead</a></li>
+                                    <li class="nav-item"><a href="team.html#Web" class="nav-link">Web Development</a>
+                                    </li>
+                                    <li class="nav-item"><a href="team.html#ML" class="nav-link">Machine Learning</a>
+                                    </li>
+                                    <li class="nav-item"><a href="team.html#Android" class="nav-link">Android and
+                                            Flutter</a></li>
+                                    <li class="nav-item"><a href="team.html#Cloud" class="nav-link">Cloud and Network
+                                            Security</a></li>
+                                    <li class="nav-item"><a href="team.html#Photography" class="nav-link">Photography
+                                            and Videography</a></li>
+                                    <li class="nav-item"><a href="team.html#Management" class="nav-link">Management</a>
+                                    </li>
+                                    <li class="nav-item"><a href="team.html#Design" class="nav-link">UI/UX and
+                                            Design</a></li>
+                                    <li class="nav-item"><a href="team.html#Content" class="nav-link">Content
+                                            Writing</a></li>
+                                    <li class="nav-item"><a href="team.html#AOG" class="nav-link">Actions on Google</a>
+                                    </li>
+                                    <li class="nav-item"><a href="team.html#3D" class="nav-link">3D Modelling</a></li>
+                                </ul>
+                            </li>
+                            <!--								<li class="nav-item"><a href="devexpo.html" class="nav-link">DevExpo</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="others-option">
+                        <a href="#upcoming" class="btn btn-light">DevExpo 2020</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Navbar Area -->
+
+
+    <!-- Start Main Banner -->
+    <div class="main-banner">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <class class="col-lg-6 col-md-12 services-left-image">
+                            <img src="assets/img/services-left-image/big-monitor.png" class="wow fadeInDown"
+                                data-wow-delay="0.6s" alt="big-monitor">
+                            <img src="assets/img/services-left-image/creative.png" class="wow fadeInUp"
+                                data-wow-delay="0.6s" alt="creative">
+                            <img src="assets/img/services-left-image/developer.png" class="wow fadeInLeft"
+                                data-wow-delay="0.6s" alt="developer">
+                            <img src="assets/img/services-left-image/flower-top.png" class="wow zoomIn"
+                                data-wow-delay="0.6s" alt="flower-top">
+                            <img src="assets/img/services-left-image/small-monitor.png" class="wow bounceIn"
+                                data-wow-delay="0.6s" alt="small-monitor">
+                            <img src="assets/img/services-left-image/small-top.png" class="wow fadeInDown"
+                                data-wow-delay="0.6s" alt="small-top">
+                            <img src="assets/img/services-left-image/table.png" class="wow zoomIn" data-wow-delay="0.6s"
+                                alt="table">
+                            <img src="assets/img/services-left-image/target.png" class="wow fadeInUp"
+                                data-wow-delay="0.6s" alt="target">
+                            <img src="assets/img/services-left-image/cercle-shape.png" class="bg-image rotateme"
+                                alt="shape">
+                            <img src="assets/img/services-left-image/main-pic.png" class="wow fadeInUp"
+                                data-wow-delay="0.6s" alt="main-pic">
+                        </class>
+                    </div>
+                </div>
+            </div>
+            <div class="shape1"><img src="assets/img/shape1.png" alt="shape"></div>
+            <div class="shape2 rotateme"><img src="assets/img/shape2.svg" alt="shape"></div>
+            <div class="shape3"><img src="assets/img/shape3.svg" alt="shape"></div>
+            <div class="shape4"><img src="assets/img/shape4.svg" alt="shape"></div>
+            <div class="shape5"><img src="assets/img/shape5.png" alt="shape"></div>
+            <div class="shape6 rotateme"><img src="assets/img/shape4.svg" alt="shape"></div>
+            <div class="shape7"><img src="assets/img/shape4.svg" alt="shape"></div>
+            <div class="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape"></div>
+        </div>
+    </div>
+    <!-- End Main Banner -->
+    <!--Start Project Tiles-->
+    <section class="boxes-area">
+        <div class="container">
+            <br><br><br><br><br><br>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-box">
+                        <a href="#">
+
+                            <h3>Project Title</h3>
+                            <div class="top_btn">
+                                <img src="./assets/img/projects/dsc-kiit-website/dsc-kiit-website-1.png">
+                                <p> <br /> </p>
+
+                                <a href="./project/sample.html" target="_blank" class="btn btn-primary">Know more</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--End Project Tiles-->
+    <!-- Start Ready To Talk Area -->
+    <a name="support"></a>
+    <section class="ready-to-talk">
+        <div class="container">
+            <h3>Ready to talk?</h3>
+            <p>Google Assistant can answer most of your questions.</p>
+            <div><a href="https://assistant.google.com/services/invoke/uid/0000006c15659a07" target="_blank"><img
+                        src="assets/img/google_assistant.png" height="100" width="100"></a></div>
+            <a href="https://assistant.google.com/services/invoke/uid/0000006c15659a07" target="_blank"
+                class="btn talkDSC">Talk to DSC KIIT</a>
+            <br><br>
+            <center><a href="#contact" class="btn contactAssist">Contact</a></center>
+        </div>
+    </section>
+    <!-- End Ready To Talk Area -->
+    <!-- Start Footer Area -->
+    <a name="contact"></a>
+    <footer class="footer-area bg-f7fafd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <div class="logo">
+                            <a href="#"><img src="assets/img/dsclogo.png" alt="logo"></a>
+                        </div>
+                        <!--							<p>Google colludes with academy students who are enthusiastic about growing developer communities and supports them with commencing student clubs on their campuses. Developer Student Clubs is a program that recognizes and supports university students who are excited about growing developer communities that cultivate learning, sharing, and collaboration.</p>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget pl-5">
+                        <h3>General Guidelines</h3>
+                        <ul class="list">
+                            <li><a href="codeOfConduct.html">Code of Conduct</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Google Developers</h3>
+                        <ul class="list">
+                            <li><a href="https://developers.google.com/programs/community/">Community Groups Program
+                                </a></li>
+                            <li><a href="https://developers.google.com/programs/dsc/">Developer Student Clubs</a>
+                            </li>
+                            <li><a href="https://www.techincludes.com/">Tech Includes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Feel free to contact us</h3>
+                        <ul class="footer-contact-info">
+                            <li><i data-feather="map-pin"></i> School of Computer Engineering, KIIT University,
+                                Bhubaneswar, 751024</li>
+                            <li><i data-feather="mail"></i> Email: <a href="mailto:info@dsckiit.in">info@dsckiit.in</a>
+                            </li>
+                            <li><i data-feather="mail"></i> Alt.: <a
+                                    href="mailto:dsckiit@gmail.com">dsckiit@gmail.com</a></li>
+                            <li><i data-feather="phone-call"></i> Phone: <a href="tel:+91-7504417023">+917504417023</a>
+                                (Manzar Hasnain)</li>
+                        </ul>
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/dsckiit/" class="facebook"><i
+                                        data-feather="facebook"></i></a></li>
+                            <li><a href="https://twitter.com/DscKiit" class="twitter"><i data-feather="twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/dsckiit/" class="instagram"><i
+                                        data-feather="instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/dsc-kiit/" class="linkedin"><i
+                                        data-feather="linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <div class="copyright-area">
+                        <p>Copyright &copy; 2019. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="assets/img/map.png" class="map" alt="map">
+        <div class="shape1"><img src="assets/img/shape1.png" alt="shape"></div>
+        <div class="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape"></div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <div class="go-top"><i data-feather="arrow-up"></i></div>
+
+    <!-- Jquery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Popper Min JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Meanmenu Min JS -->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!-- WOW Min JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Appear Min JS -->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- Odometer Min JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Slick Min JS -->
+    <script src="assets/js/slick.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Feather Icon Min JS -->
+    <script src="assets/js/feather.min.js"></script>
+    <!-- Form Validator Min JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact Form Min JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- StartP Map JS FILE -->
+    <script src="assets/js/startp-map.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
