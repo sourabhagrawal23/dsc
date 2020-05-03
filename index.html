@@ -1135,6 +1135,45 @@ return true;" target="_blank" class="btn btn-primary">Watch</a>
             }
         }
     </script>
+    <script>
+        var image = "assets/img/dsccolorlogo.png";
+        window.onload = function () {
+            this.notifyMe();
+        };
+
+        function notifyMe() {
+            navigator.serviceWorker.register("assets/js/sw.js");
+
+            if (!("Notification" in window)) {
+                alert("Not supported");
+            } 
+            else if (Notification.permission === "granted") {
+                navigator.serviceWorker.ready.then(function (registration) {
+                    registration.showNotification("DevTalks", {
+                        body: "Watch Mr.Rohan Ghosh live on youtube",
+                        icon: image,
+                        vibrate: [100, 50, 100],
+                        badge: image,
+                    });
+                });
+            } 
+            else if (Notification.permission !== "denied") {
+                Notification.requestPermission().then(function (permission) {
+                    if (permission === "granted") {
+                        navigator.serviceWorker.ready.then(function (registration) {
+                            registration.showNotification("DevTalks", {
+                                body: "Watch Mr.Rohan Ghosh live on youtube",
+                                icon: image,
+                                vibrate: [100, 50, 100],
+                                badge: image,
+                            });
+                        });
+                    }
+                });
+            }
+        }
+
+    </script>
 </body>
 
 </html>
