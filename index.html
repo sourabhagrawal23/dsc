@@ -1178,6 +1178,14 @@ return true;" target="_blank" class="btn btn-primary">Watch</a>
         .requestPermission()
         .then(function () {
           console.log("Have permission");
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('firebase-messaging-sw.js')
+            .then(function(registration) {
+                console.log('Registration successful, scope is:', registration.scope);
+            }).catch(function(err) {
+                console.log('Service worker registration failed, error:', err);
+            });
+        }
           return messaging.getToken();
         })
         .then(function (token) {
@@ -1189,7 +1197,7 @@ return true;" target="_blank" class="btn btn-primary">Watch</a>
         });
 
       messaging.onMessage(function (payload) {
-        navigator.serviceWorker.register("firebase-messaging-sw.js");
+        
         var data = JSON.parse(payload.data.notification);
         const notificationTitle = data.title;
         const notificationOptions = {
