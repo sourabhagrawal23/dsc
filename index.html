@@ -1135,44 +1135,88 @@ return true;" target="_blank" class="btn btn-primary">Watch</a>
             }
         }
     </script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-messaging.js"></script>
+
     <script>
-        var image = "assets/img/dsccolorlogo.png";
-        window.onload = function () {
-            this.notifyMe();
+      var firebaseConfig = {
+        apiKey: "<YOUR-API-KEY>",
+        authDomain: "<YOUR-AUTH-DOMAIN>",
+        databaseURL: "<DB-URL>",
+        projectId: "<PROJECT-ID>",
+        storageBucket: "<BUCKET-ID>",
+        messagingSenderId: "<SENDER-ID>",
+        appId: "<APP-ID>",
+        measurementId: "<MEASUREMENT-ID>",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      function subscribeTokenToTopic(token) {
+        fetch(
+          "https://iid.googleapis.com/iid/v1/" +
+            token +
+            "/rel/topics/notifications",
+          {
+            method: "POST",
+            headers: new Headers({
+              Authorization:
+                "key=<SERVER-KEY-CLOUD-MESSAGING>",
+              "Content-Type": "application/json",
+            }),
+          }
+        ).then((response) => {
+          console.log("Subscribed" + response);
+        });
+      }
+
+      const messaging = firebase.messaging();
+      messaging
+        .requestPermission()
+        .then(function () {
+          console.log("Have permission");
+          return messaging.getToken();
+        })
+        .then(function (token) {
+          console.log(token);
+          subscribeTokenToTopic(token);
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+
+      messaging.onMessage(function (payload) {
+        navigator.serviceWorker.register("assets/js/firebase-messaging-sw.js");
+        var data = JSON.parse(payload.data.notification);
+        const notificationTitle = data.title;
+        const notificationOptions = {
+          body: data.body,
+          icon: "assets/imgs/dsccolorlogo.png",
+          vibrate: [100, 50, 100],
         };
 
-        function notifyMe() {
-            navigator.serviceWorker.register("assets/js/sw.js");
-
-            if (!("Notification" in window)) {
-                alert("Not supported");
-            } 
-            else if (Notification.permission === "granted") {
-                navigator.serviceWorker.ready.then(function (registration) {
-                    registration.showNotification("DevTalks", {
-                        body: "Watch Mr.Rohan Ghosh live on youtube",
-                        icon: image,
-                        vibrate: [100, 50, 100],
-                        badge: image,
-                    });
-                });
-            } 
-            else if (Notification.permission !== "denied") {
-                Notification.requestPermission().then(function (permission) {
-                    if (permission === "granted") {
-                        navigator.serviceWorker.ready.then(function (registration) {
-                            registration.showNotification("DevTalks", {
-                                body: "Watch Mr.Rohan Ghosh live on youtube",
-                                icon: image,
-                                vibrate: [100, 50, 100],
-                                badge: image,
-                            });
-                        });
-                    }
-                });
+        if (!("Notification" in window)) {
+          alert("Not supported");
+        } else if (Notification.permission === "granted") {
+          navigator.serviceWorker.ready.then(function (registration) {
+            registration.showNotification(
+              notificationTitle,
+              notificationOptions
+            );
+          });
+        } else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then(function (permission) {
+            if (permission === "granted") {
+              navigator.serviceWorker.ready.then(function (registration) {
+                registration.showNotification(
+                  notificationTitle,
+                  notificationOptions
+                );
+              });
             }
+          });
         }
-
+      });
     </script>
 </body>
 
