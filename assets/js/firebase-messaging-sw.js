@@ -4,14 +4,14 @@ importScripts(
 );
 
 var firebaseConfig = {
-  apiKey: "<YOUR-API-KEY>",
-  authDomain: "<YOUR-AUTH-DOMAIN>",
-  databaseURL: "<DB-URL>",
-  projectId: "<PROJECT-ID>",
-  storageBucket: "<BUCKET-ID>",
-  messagingSenderId: "<SENDER-ID>",
-  appId: "<APP-ID>",
-  measurementId: "<MEASUREMENT-ID>",
+  apiKey: "AIzaSyDyhweUc4vVq8c-Kp6pN8UYvl1C_1YrICE",
+  authDomain: "dsckiit-main.firebaseapp.com",
+  databaseURL: "https://dsckiit-main.firebaseio.com",
+  projectId: "dsckiit-main",
+  storageBucket: "dsckiit-main.appspot.com",
+  messagingSenderId: "401113392361",
+  appId: "1:401113392361:web:5dffe58ac7a0b9b5ecbc78",
+  measurementId: "G-TD77TWCDHN",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
