@@ -1140,32 +1140,49 @@ return true;" target="_blank" class="btn btn-primary">Watch</a>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-messaging.js"></script>
 
     <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyDyhweUc4vVq8c-Kp6pN8UYvl1C_1YrICE",
-            authDomain: "dsckiit-main.firebaseapp.com",
-            databaseURL: "https://dsckiit-main.firebaseio.com",
-            projectId: "dsckiit-main",
-            storageBucket: "dsckiit-main.appspot.com",
-            messagingSenderId: "401113392361",
-            appId: "1:401113392361:web:5dffe58ac7a0b9b5ecbc78",
-            measurementId: "G-TD77TWCDHN",
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
+      
+      var firebaseConfig = {
+        apiKey: "AIzaSyDyhweUc4vVq8c-Kp6pN8UYvl1C_1YrICE",
+        authDomain: "dsckiit-main.firebaseapp.com",
+        databaseURL: "https://dsckiit-main.firebaseio.com",
+        projectId: "dsckiit-main",
+        storageBucket: "dsckiit-main.appspot.com",
+        messagingSenderId: "401113392361",
+        appId: "1:401113392361:web:5dffe58ac7a0b9b5ecbc78",
+        measurementId: "G-TD77TWCDHN",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
 
-        function subscribeTokenToTopic(token) {
-            fetch(
-                "https://iid.googleapis.com/iid/v1/" +
-                token +
-                "/rel/topics/notifications", {
-                    method: "POST",
-                    headers: new Headers({
-                        Authorization: "key=AAAAXWQ4pOk:APA91bG2m2-dEznHNutva5-fxt2wZk2NLDBJ8HkhQIpneA5u4y_kYlhbxYfte5Y3L8gUbls8ITf6wsSYWtl2T_K5d-Bcio3MCML4rp2fu93CngqhTs5kJftLxl9i_kHHnRnw1ODg3Ljq",
-                        "Content-Type": "application/json",
-                    }),
-                }
-            ).then((response) => {
-                console.log("Subscribed" + response);
+      function subscribeTokenToTopic(token) {
+        fetch(
+          "https://iid.googleapis.com/iid/v1/" +
+            token +
+            "/rel/topics/notifications",
+          {
+            method: "POST",
+            headers: new Headers({
+              Authorization:
+                "key=AAAAXWQ4pOk:APA91bG2m2-dEznHNutva5-fxt2wZk2NLDBJ8HkhQIpneA5u4y_kYlhbxYfte5Y3L8gUbls8ITf6wsSYWtl2T_K5d-Bcio3MCML4rp2fu93CngqhTs5kJftLxl9i_kHHnRnw1ODg3Ljq",
+              "Content-Type": "application/json",
+            }),
+          }
+        ).then((response) => {
+          console.log("Subscribed" + response);
+        });
+      }
+
+      const messaging = firebase.messaging();
+      messaging
+        .requestPermission()
+        .then(function () {
+          console.log("Have permission");
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('firebase-messaging-sw.js')
+            .then(function(registration) {
+                console.log('Registration successful, scope is:', registration.scope);
+            }).catch(function(err) {
+                console.log('Service worker registration failed, error:', err);
             });
         }
 
