@@ -1179,7 +1179,7 @@ return true;" target="_blank" class="btn btn-primary">Watch</a>
         .then(function () {
           console.log("Have permission");
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('dsc/firebase-messaging-sw.js')
+            navigator.serviceWorker.register('firebase-messaging-sw.js')
             .then(function(registration) {
                 console.log('Registration successful, scope is:', registration.scope);
             }).catch(function(err) {
