@@ -1226,7 +1226,7 @@ Boxes CSS
 
 .single-box {
   border: 1px dashed #cdf1d8;
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
   position: relative;
   z-index: 1;
   border-radius: 5px;
