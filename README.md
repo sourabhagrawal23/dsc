@@ -2,7 +2,7 @@
 # DSC KIIT
 ____________________________________________________________________________________________________________________________________
 
-<a href="http://"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=website&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<a href="http://www.dsckiit.tech"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=website&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
 
 
 ### Official Website of Developer Student Clubs, Kalinga Institute of Industrial Technology.
